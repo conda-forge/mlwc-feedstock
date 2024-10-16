@@ -11,7 +11,7 @@ source:
     sha256: fe912eb8240d32694c08ff8c957ae2ba1cf17eaa4bf9db56021ca515439c0aef
     
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --prefix=$PREFIX
@@ -34,6 +34,8 @@ requirements:
     - pyyaml
     - statsmodels
     - matplotlib-base
+    - mdanalysis
+    - packmol
 
 test:
   requires:
