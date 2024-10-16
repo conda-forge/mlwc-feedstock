@@ -34,6 +34,8 @@ requirements:
     - pyyaml
     - statsmodels
     - matplotlib-base
+    - mdanalysis
+    - packmol
 
 test:
   requires:
