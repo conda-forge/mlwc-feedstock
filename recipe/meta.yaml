@@ -10,7 +10,7 @@ source:
     sha256: 30cdb6a21df5ae68b80f87b4ae240c12913e9be2a9dd3166ca9c95bc2ceeed13
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --prefix=$PREFIX
@@ -35,6 +35,7 @@ requirements:
     - matplotlib-base
     - mdanalysis
     - packmol
+    - jaxtyping
 
 test:
   requires:
